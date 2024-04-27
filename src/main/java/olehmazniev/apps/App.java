@@ -10,6 +10,7 @@ import javax.swing.SwingUtilities;
  *
  * @author Oleh Mazniev
  * @version 1.0
+ * @email zaaqq135[at]gmail[dot]com
  */
 public class App {
 
