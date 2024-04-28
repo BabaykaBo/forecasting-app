@@ -117,7 +117,7 @@ public class WeatherAppGui extends JFrame {
             BufferedImage image = ImageIO.read(new File(resourcePath));
             return new ImageIcon(image);
         } catch (IOException e) {
-            System.err.println(e.toString());
+            e.printStackTrace();
         }
 
         System.out.println("Could not find resource!");
