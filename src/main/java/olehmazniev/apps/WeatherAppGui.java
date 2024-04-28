@@ -28,7 +28,8 @@ import javax.swing.SwingConstants;
  * @email zaaqq135[at]gmail[dot]com
  */
 public class WeatherAppGui extends JFrame {
-
+    
+    private static final String DEFAULT_FONT = "Dialog";
     /**
      * Constructs the main window of the Weather App GUI. Sets the title,
      * default close operation, size, layout, and initializes the GUI components
@@ -55,7 +56,7 @@ public class WeatherAppGui extends JFrame {
         // Adding search text field
         JTextField searchTextField = new JTextField();
         searchTextField.setBounds(15, 15, 351, 45);
-        searchTextField.setFont(new Font("Dialog", Font.PLAIN, 24));
+        searchTextField.setFont(new Font(DEFAULT_FONT, Font.PLAIN, 24));
         add(searchTextField);
 
         // Adding search button with image
@@ -71,14 +72,14 @@ public class WeatherAppGui extends JFrame {
         // Adding temperature display
         JLabel temperatureText = new JLabel("10 C");
         temperatureText.setBounds(0, 350, 450, 54);
-        temperatureText.setFont(new Font("Dialog", Font.BOLD, 48));
+        temperatureText.setFont(new Font(DEFAULT_FONT, Font.BOLD, 48));
         temperatureText.setHorizontalAlignment(SwingConstants.CENTER);
         add(temperatureText);
 
         // Adding weather condition description
         JLabel weatherConditionDesc = new JLabel("Cloudy");
         weatherConditionDesc.setBounds(0, 405, 450, 36);
-        weatherConditionDesc.setFont(new Font("Dialog", Font.PLAIN, 32));
+        weatherConditionDesc.setFont(new Font(DEFAULT_FONT, Font.PLAIN, 32));
         weatherConditionDesc.setHorizontalAlignment(SwingConstants.CENTER);
         add(weatherConditionDesc);
 
@@ -90,7 +91,7 @@ public class WeatherAppGui extends JFrame {
         // Adding humidity text
         JLabel humidityText = new JLabel("<html><b>Humidity</b> 100%</html>");
         humidityText.setBounds(90, 500, 85, 55);
-        humidityText.setFont(new Font("Dialog", Font.PLAIN, 16));
+        humidityText.setFont(new Font(DEFAULT_FONT, Font.PLAIN, 16));
         add(humidityText);
 
         // Adding wind speed display
@@ -101,7 +102,7 @@ public class WeatherAppGui extends JFrame {
         // Adding wind speed text
         JLabel windspeedText = new JLabel("<html><b>Windspeed</b> 15km/h</html>");
         windspeedText.setBounds(310, 500, 85, 55);
-        windspeedText.setFont(new Font("Dialog", Font.PLAIN, 16));
+        windspeedText.setFont(new Font(DEFAULT_FONT, Font.PLAIN, 16));
         add(windspeedText);
     }
 
@@ -120,7 +121,7 @@ public class WeatherAppGui extends JFrame {
             e.printStackTrace();
         }
 
-        System.out.println("Could not find resource!");
+        System.err.println("Could not find resource!");
         return null;
     }
 }

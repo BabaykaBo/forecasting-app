@@ -23,8 +23,6 @@ public class App {
      * @param args Command-line arguments (not used).
      */
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            new WeatherAppGui().setVisible(true);
-        });
+         SwingUtilities.invokeLater(() -> new WeatherAppGui().setVisible(true));
     }
 }
