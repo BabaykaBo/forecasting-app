@@ -26,14 +26,16 @@ public class WeatherApp {
     private static JSONArray getLocationData(String locationName) {
         locationName = locationName.replace(" ", "+");
 
+
         String urlString = "https://geocoding-api.open-meteo.com/v1/search?name=" + locationName + "&count=10&language=en&format=json";
 
         try {
             HttpURLConnection conn = fetchApiResponse(urlString);
-            
+       
             
 
             if (conn != null && 200 != conn.getResponseCode()) {
+
                 System.err.println("Error: Could not connect to API!");
                 return null;
             } else {
@@ -75,7 +77,7 @@ public class WeatherApp {
 
         } catch (IOException ex) {
             ex.printStackTrace();
-        } 
+        }
         
         return null;
     }
