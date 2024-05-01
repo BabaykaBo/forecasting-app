@@ -1,0 +1,24 @@
+-classpath
+'C:/Users/User/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'21'
+-sourcepath
+'C:/Users/User/Desktop/java/apps/forecasting/forecasting/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/User/Desktop/java/apps/forecasting/forecasting/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'forecasting 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'forecasting 1.0-SNAPSHOT API'

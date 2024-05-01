@@ -81,6 +81,24 @@
                     <artifactId>maven-project-info-reports-plugin</artifactId>
                     <version>3.0.0</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.4.0</version> <!-- Make sure to use the latest version -->
+                    <executions>
+                        <execution>
+                            <id>generate-javadocs</id>
+                            <phase>prepare-package</phase> <!-- Binds Javadoc generation to the prepare-package phase -->
+                            <goals>
+                                <goal>jar</goal> <!-- Generates a JAR file with Javadocs -->
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <!-- Additional configuration options -->
+                        <failOnError>false</failOnError> <!-- Optional: configure to not fail the build on Javadoc errors -->
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
